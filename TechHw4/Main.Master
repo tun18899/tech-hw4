@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.Master.cs" Inherits="TechHw4.Test" %>
+
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<html>
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My own pet store</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <style>
+ footer {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color:aqua;
+}
+
+ body{
+     background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBpHDBMdKKOSlB-2J2K7WQMatzf5j1CKOqxg&usqp=CAU');
+ }
+ </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+       <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="welcome.aspx">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="dog.aspx">Dog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cat.aspx">Cat</a>
+      </li>
+    </ul>
+      </div>
+</nav>
+ <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+ </asp:ContentPlaceHolder>
+ <footer>
+  <p style="text-align:center">Copyright &copy; Devpractical.com</p>
+</footer>
+</form>
+  
+</body>
+</html>
